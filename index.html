@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>JS local storage class</title>
+
+</head>
+<body on>
+    <h1>JS Local  Storage Exploration using login system</h1>
+
+    <section>
+      <h2>Signup here</h2>
+      <form onsubmit="signUp(event)">
+
+        <!-- Email -->
+        <div >
+          <label for="email">Email</label>
+          <input required type="email" name="email" id="email">
+        </div>
+        <!-- First name -->
+        <div >
+          <label for="firstName">First Name</label>
+          <input required type="text" name="firstName" id="firstName">
+        </div>
+        <!-- Middle name -->
+        <div >
+          <label for="secondName">Second Name</label>
+          <input type="text" name="secondName" id="secondName">
+        </div>
+        <div >
+          <label for="lastName">Last Name</label>
+          <input required type="text" name="lastName" id="lastName">
+        </div>
+        <!-- Password -->
+        <div >
+          <label for="password">Password</label>
+          <input required type="password" name="password" id="password">
+        </div>
+        <div id="error" class="center" style="display: none; color: red;">
+            User already exists
+        </div>
+        <div id="success" class="center" style="display: none;">
+          Signup was successful, please click on login link below to login
+        </div>
+        <div class="center">
+          <button> Signup </button>
+        </div>
+      </form>
+      <div class="center">Already have an account? 
+        <a href="/login.html"> login here</a>
+      </div>
+      
+    </section>
+
+    <form onsubmit="event.preventDefault()" action="" method="get">
+      <input type="text" name="test" value="Kenny">
+      <button>See</button>
+    </form>
+
+</body>
+<script src="./index.js"></script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>JS local storage class</title>
+
+  <style>
+ 
+  </style>
+</head>
+<body on>
+    <h1>JS Local  Storage Exploration using login system</h1>
+
+    <section>
+      <h2>Login here</h2>
+      <form onsubmit="login(event)">
+        <!-- Email -->
+        <div >
+          <label for="email">Email</label>
+          <input required type="email" name="email" id="email">
+        </div>
+
+        <!-- Password -->
+        <div >
+          <label for="password">Password</label>
+          <input required type="password" name="password" id="password">
+        </div>
+        <!-- Error -->
+        <div id="error" class="center" style="display: none; color: red;">
+          Account not found, please click on signup below.
+        </div>
+        <!-- Success -->
+        <div id="success" class="center" style="display: none;">
+          Login successful! Goto 
+          <a href="/dashboard.html"> dashboard</a>
+      </div>
+
+        <div class="center">
+          <button> Login </button>
+        </div>
+      </form>
+
+      <div class="center">No account yet? 
+        <a href="/index.html"> signup here</a>
+      </div>
+      
+    </section>
+
+</body>
+<script src="./index.js"></script>
+</html>
